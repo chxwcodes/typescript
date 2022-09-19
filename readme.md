@@ -34,15 +34,15 @@ In terminal of your root folder:
 Which creates a config file `tsconfig.json` in your project folder. Also will tell you in the terminal the settings that's been enabled with it. There's a bunch of settings with its description.
 
 ### Few config settings to note
-- `"target": "ES2016" `: Which version of javascript the typescript complier is going to generate. Default is ES2016, which is usually the safest(?), since all browsers support it. Press `ctrl+space` to see different options.
--`"module": "commonjs"`
--`"rootDir": "./src"`: by convention, source code (.ts code file) should be in a seperate folder called src. 
-!(./src/assets/file-structure.png)
--`"outDir": "./dist"`: the directory that contains our js files (finishedcomplied code). Usually, it's in a folder called `dist`.
--`"removeComments": "true"`: just removes the comments in the .ts when we compile to .js
--`"noEmitOnError": "true"`: when this is turned on, the complier will stop compiling when there is an error in our code (usually it's compiled anyways, we'd want the opposite of that lol)
+- `"target": "ES2016" `: Which version of javascript the typescript complier is going to generate. Default is ES2016, which is usually the safest(?), since all browsers support it. Press `ctrl+space` to see different options.  
+- `"module": "commonjs"`  
+- `"rootDir": "./src"`: by convention, source code (.ts code file) should be in a seperate folder called src. 
+!(/src/assets/file-structure.png)  
+- `"outDir": "./dist"`: the directory that contains our js files (finishedcomplied code). Usually, it's in a folder called `dist`.  
+- `"removeComments": "true"`: just removes the comments in the .ts when we compile to .js  
+- `"noEmitOnError": "true"`: when this is turned on, the complier will stop compiling when there is an error in our code (usually it's compiled anyways, we'd want the opposite of that lol)  
 
 ## Finally, let's compile
-In your project terminal
+In your project terminal  
 `tsc`  
 Since we've did the set up in the config file, we can omit writing `tsc index.ts` or any other of the sort.
