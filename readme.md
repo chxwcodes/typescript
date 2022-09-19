@@ -19,18 +19,18 @@ TLDR: javascript, but with type checking
 
 ## Setting up Typescript
 In terminal:
-`npm i -g typescript`
+`npm i -g typescript`  
 `-g` is a flag that installs the package globally. If permission error, add prefix `sudo`.
 
 To verify that it's installed:
-`tsc -v`
+`tsc -v`  
 `-v` is flag that checks version.
 
-## Setting up to compile .ts to .js
+## Setting up to compile .ts to .js  
 To avoid older syntax when compiling, create config files to tell TS to compile in ES6.
 
-In terminal of your root folder:
-`tsc --init`
+In terminal of your root folder:  
+`tsc --init`  
 Which creates a config file `tsconfig.json` in your project folder. Also will tell you in the terminal the settings that's been enabled with it. There's a bunch of settings with its description.
 
 ### Few config settings to note
@@ -44,5 +44,5 @@ Which creates a config file `tsconfig.json` in your project folder. Also will te
 
 ## Finally, let's compile
 In your project terminal
-`tsc`
+`tsc`  
 Since we've did the set up in the config file, we can omit writing `tsc index.ts` or any other of the sort.
